@@ -10,6 +10,8 @@ echo $signer->buildUrl(array("a" => 123, "b" => array("x" => 1, "y" => 2)));
 // Result looks like:
 // http://slave.com/page/af0b386b9dc43dc0/a879fde2e01643fa1/estMsTU0MDA0wMVMrBwmqZ?xyz
 
+or
+echo $signer->createToken(array("a" => 123, "b" => array("x" => 1, "y" => 2)))
 
 Usage sample: parse previously signed URL
 -----------------------------------------

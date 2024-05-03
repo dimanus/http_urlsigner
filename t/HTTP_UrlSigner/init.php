@@ -29,7 +29,6 @@ class HTTP_UrlSigner_Stub extends HTTP_UrlSigner
 			if ($passRelativeUrl) $url = $this->_getUriByUrl($url);
 			$url .= $passSuffix;
 			$url = preg_replace('/(?=\?)/s', $mangleToken, $url);
-//			echo "$url\n";
 			$parsed = $this->parseUrl($url);
 			echo http_build_query($parsed) === http_build_query($params)? "matched" : "not matched";
 		} catch (Exception $e) {
